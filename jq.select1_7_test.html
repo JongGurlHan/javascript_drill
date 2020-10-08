@@ -7,15 +7,23 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.js"></script>
     <script>
         $(function(){
-            $(".tit").css("background-color", "#ff0")
+            $("#list_1").parent()
             .css("border", "2px dashed #f00");
         });
     </script>
 </head>
 <body>
-    <h1>제이쿼리</h1>
-    <h2 class = "tit">선택자</h2>
-    <h3>직접선택자</h3>
+    <h1>인접 관계 선택자</h1>
+    <ul id = "wrap">
+        <li>리스트1
+            <ul>
+                <li id = "list_1">리스트1-1</li>
+                <li>리스트1-2</li>
+            </ul>
+        </li>
+        <li>리스트2</li>
+        <li>리스트3</li>
+    </ul>
     
 </body>
 </html>
